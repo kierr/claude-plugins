@@ -1,0 +1,8 @@
+{
+  "name": "gh-pr-comments",
+  "description": "Managing GitHub pull request review comments through extraction, validation, fixes, and resolution workflows using gh CLI.",
+  "version": "1.0.0",
+  "author": {
+    "name": "Kierr"
+  }
+}

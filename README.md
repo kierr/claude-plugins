@@ -1,51 +1,53 @@
-# Kierr's Claude Code Plugins Marketplace
-
-A collection of plugins for Claude Code to enhance development workflows.
-
-## Available Plugins
-
-### GitHub PR Comments Plugin
-**Name**: `gh-pr-comments`  
-**Description**: Managing GitHub pull request review comments through extraction, validation, fixes, and resolution workflows using gh CLI.
+# GitHub PR Comments Plugin for Claude Code
 
 This plugin helps manage GitHub pull request review comments through a complete workflow:
-- Extract unresolved comments from the current PR
-- Validate each comment against project standards
-- Apply fixes for valid comments
-- Resolve addressed comment threads
+
+1. Extract unresolved comments from the current PR
+2. Validate each comment against project standards
+3. Apply fixes for valid comments
+4. Resolve addressed comment threads
+
+## Features
+
+- **Comment Extraction**: Automatically extract all unresolved review comments from the current PR
+- **Comment Validation**: Validate comments against project standards and technical merit
+- **Automated Fixes**: Apply fixes using appropriate strategies for each valid comment
+- **Thread Resolution**: Mark comments as resolved when fixes are implemented
+- **Reference Materials**: Comprehensive guides for validation patterns, fix strategies, and workflow checklists
+
+## Requirements
+
+- GitHub CLI (`gh`) installed and authenticated
+- Write access to target repository
+- Bash shell environment
 
 ## Installation
 
-1. Add this marketplace using the GitHub URL:
+1. Add the marketplace:
    ```
    /plugin marketplace add https://github.com/kierr/claude-plugins
    ```
 
-2. Browse available plugins:
-   ```
-   /plugin
-   ```
-
-3. Install desired plugins:
+2. Install the plugin:
    ```
    /plugin install gh-pr-comments@kierr
    ```
 
-## Plugin Development
+## Usage
 
-To add a new plugin to this marketplace:
+After installation, you can use the `/manage-pr-comments` command to start the workflow, or Claude will autonomously use the skill when working with GitHub PRs.
 
-1. Create a new plugin repository following the Claude Code plugin structure
-2. Add an entry to the `marketplace.json` file in this repository
-3. Submit a pull request with your changes
+## Skill Capabilities
 
-## Marketplace Structure
+The plugin includes a skill that Claude can use autonomously with the following capabilities:
 
-The marketplace.json file contains metadata about available plugins:
-- Plugin name
-- Source location (GitHub URL)
-- Description
+- **Extracting Unresolved Comments**: Get all unresolved review threads from the current PR
+- **Validating Review Comments**: Check each comment against project standards and technical merit
+- **Applying Fixes**: Implement fixes using appropriate strategies for each valid comment
+- **Marking Comments Resolved**: Resolve threads when fixes successfully address the concerns
 
-## Contributing
+## Reference Materials
 
-Feel free to submit pull requests to add new plugins to this marketplace or improve existing ones.
+- `references/validation-patterns.md`: Detailed validation frameworks and common patterns
+- `references/fix-strategies.md`: Standardized approaches for implementing changes
+- `references/workflow-checklists.md`: Step-by-step checklists for each capability
