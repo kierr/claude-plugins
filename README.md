@@ -28,7 +28,7 @@ This plugin helps manage GitHub pull request review comments through a complete 
 
 3. Install desired plugins:
    ```
-   /plugin install gh-pr-comments@kierr-plugins
+   /plugin install gh-pr-comments@kierr
    ```
 
 ## Plugin Development
