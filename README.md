@@ -16,9 +16,9 @@ This plugin helps manage GitHub pull request review comments through a complete 
 
 ## Installation
 
-1. Add this marketplace:
+1. Add this marketplace using the GitHub URL:
    ```
-   /plugin marketplace add kierr/claude-plugins
+   /plugin marketplace add https://github.com/kierr/claude-plugins
    ```
 
 2. Browse available plugins:
@@ -28,7 +28,7 @@ This plugin helps manage GitHub pull request review comments through a complete 
 
 3. Install desired plugins:
    ```
-   /plugin install plugin-name@kierr-plugins
+   /plugin install gh-pr-comments@kierr-plugins
    ```
 
 ## Plugin Development
@@ -43,7 +43,7 @@ To add a new plugin to this marketplace:
 
 The marketplace.json file contains metadata about available plugins:
 - Plugin name
-- Source location
+- Source location (GitHub URL)
 - Description
 
 ## Contributing
