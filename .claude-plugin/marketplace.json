@@ -1,0 +1,13 @@
+{
+  "name": "kierr",
+  "owner": {
+    "name": "Kierr"
+  },
+  "plugins": [
+    {
+      "name": "gh-pr-comments",
+      "source": "https://github.com/kierr/claude-plugin-gh-pr-comments",
+      "description": "Managing GitHub pull request review comments through extraction, validation, fixes, and resolution workflows using gh CLI."
+    }
+  ]
+}
